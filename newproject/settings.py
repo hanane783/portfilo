@@ -163,7 +163,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "unsafe-dev-key")  # ✅ 🔐 �
 DEBUG = os.environ.get("DEBUG", "False") == "True"  # ✅ 🔧 متغير بيئة لتحديد وضع التصحيح
 
 # ALLOWED_HOSTS
-ALLOWED_HOSTS = ['your-service-name.onrender.com', 'localhost', '127.0.0.1']  # ✅ 🌐 اسم مشروعك في Render
+ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']  # ✅ 🌐 اسم مشروعك في Render
 
 # Application definition
 INSTALLED_APPS = [
