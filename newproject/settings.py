@@ -154,7 +154,7 @@ from dotenv import load_dotenv  # 📌 لتحميل متغيرات البيئة 
 load_dotenv()
 
 # BASE_DIR
-BASE_DIR = Path(file).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECRET_KEY
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "unsafe-dev-key")  # ✅ 🔐 مفتاح آمن من متغيرات البيئة
